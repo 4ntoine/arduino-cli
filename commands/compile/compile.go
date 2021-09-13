@@ -146,6 +146,9 @@ func Compile(ctx context.Context, req *rpc.CompileRequest, outStream, errStream 
 	} else {
 		builderCtx.BuildPath = paths.New(req.GetBuildPath()).Canonical()
 	}
+
+	if req.ReturnFileContent()
+
 	if err = builderCtx.BuildPath.MkdirAll(); err != nil {
 		return nil, &commands.PermissionDeniedError{Message: tr("Cannot create build directory"), Cause: err}
 	}
@@ -280,6 +283,8 @@ func Compile(ctx context.Context, req *rpc.CompileRequest, outStream, errStream 
 				return r, &commands.PermissionDeniedError{Message: tr("Error copying output file %s", buildFile), Cause: err}
 			}
 		}
+
+		// TODO: check if file contens was requestd and return it in response (probably archive?).
 	}
 
 	importedLibs := []*rpc.Library{}
