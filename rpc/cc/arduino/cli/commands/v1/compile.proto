@@ -80,6 +80,8 @@ message CompileRequest {
   google.protobuf.BoolValue export_binaries = 23;
   // List of paths to library root folders
   repeated string library = 24;
+  // Return the content of the compiled binary (in addition to paths).
+  bool return_file_content = 25;
 }
 
 message CompileResponse {
@@ -93,6 +95,8 @@ message CompileResponse {
   repeated Library used_libraries = 4;
   // The size of the executable split by sections
   repeated ExecutableSectionSize executable_sections_size = 5;
+  // The content of the compiled binary.
+  string file_content = 6;
 }
 
 message ExecutableSectionSize {
