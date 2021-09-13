@@ -1,13 +1,8 @@
 # 
-# Translators:
-# Cristian Maglie <c.maglie@arduino.cc>, 2021
-# Andrea Richetta <a.richetta@arduino.cc>, 2021
-# 
 msgid ""
 msgstr ""
-"Last-Translator: Andrea Richetta <a.richetta@arduino.cc>, 2021\n"
-"Language-Team: Italian (Italy) (https://www.transifex.com/arduino-1/teams/108174/it_IT/)\n"
-"Language: it_IT\n"
+"Language-Team: Spanish (https://www.transifex.com/arduino-1/teams/108174/es/)\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: version/version.go:53
@@ -121,7 +116,7 @@ msgstr ""
 
 #: cli/usage.go:32
 msgid "Additional help topics:"
-msgstr "Informazioni aggiuntive:"
+msgstr ""
 
 #: cli/config/add.go:31 cli/config/add.go:32
 msgid "Adds one or more values to a setting."
@@ -129,7 +124,7 @@ msgstr ""
 
 #: cli/usage.go:27
 msgid "Aliases:"
-msgstr "Alias:"
+msgstr ""
 
 #: cli/core/upgrade.go:68
 msgid "All the cores are already at the latest version"
@@ -209,7 +204,7 @@ msgstr ""
 
 #: cli/usage.go:29
 msgid "Available Commands:"
-msgstr "Comandi disponibili:"
+msgstr ""
 
 #: cli/upload/upload.go:60
 msgid "Binary file to upload."
@@ -928,7 +923,7 @@ msgstr ""
 
 #: cli/usage.go:28
 msgid "Examples:"
-msgstr "Esempi:"
+msgstr ""
 
 #: cli/debug/debug.go:134
 msgid "Executable to debug"
